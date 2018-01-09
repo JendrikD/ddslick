@@ -243,8 +243,8 @@
     }
 
     //Private: Select index
-    function selectIndex(obj, index, doCallback = true) {
-
+    function selectIndex(obj, index, doCallback) {
+        doCallback = doCallback === false ? false : true;
         //Get plugin data
         var pluginData = obj.data('ddslick');
 
